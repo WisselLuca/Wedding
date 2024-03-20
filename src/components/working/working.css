@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.divSpace-working {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-container-working {
+    min-height: 200px;
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    margin-bottom: 200vh;
+    background-color: antiquewhite;
+}
+
+.envelope {
+    height: 80vh;
+    width: 250px;
+    text-align: center;
+    left: 0px;
+    background-color: peachpuff;
+    opacity: 0.95;
+}
+
+
+.box2 {
+    height: 200px;
+    width: 250px;
+    text-align: center;
+    background-color: crimson;
+}
+
+
+.partecipazioneFront {
+    height: 80vh;
+    width: 250px;
+    text-align: center;
+    position: absolute;
+    overflow: hidden;
+    background-image: url(../../img/part_front.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
