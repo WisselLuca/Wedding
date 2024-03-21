@@ -31,7 +31,7 @@ body {
     justify-content: center;
     justify-content: center;
     margin-bottom: 200vh;
-    background-color: #faebd7;
+    background-color: #fff6f5;
 }
 
 .partecipazione {
@@ -56,7 +56,7 @@ body {
 .envelopeCointainer {
     display: flex;
     justify-content: center;
-    background-color: aqua;
+    background-color: #fff6f5;
     width: 100%;
     height: 100vh;
 }
@@ -66,14 +66,14 @@ body {
     width: 250px;
     text-align: center;
     left: 0px;
-    background-color: #ffdab9;
+    background-color: #ffd1cc;
     opacity: 0.95;
 }
 
 .rotating_part {
     height: 20%;
     width: 250px;
-    background-color: pink;
+    background-color: #D19E8C;
     position: absolute;
     bottom: 0;
     z-index: 9999;

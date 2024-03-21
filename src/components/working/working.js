@@ -102,7 +102,7 @@ const Working = () => {
         //pin dell'immagine
         ScrollTrigger.create({
             trigger: '.scroll_element',
-            start: vh(100) + " 10%",
+            start: vh(100) /*per mobile non deve esserci + " 10%"*/,
             endTrigger: '',
             end: 'bottom top',
             pin: '.envelopeCointainer'
@@ -110,7 +110,7 @@ const Working = () => {
 
 
 
-        //pin dell'immagine
+        //zoom dell'immagine
         ScrollTrigger.create({
             trigger: '.scroll_element',
             start: vh(140) + " 40%",
@@ -166,11 +166,11 @@ const Working = () => {
     return (
         <div className='App'>
             <div className="page_container" style={{ width: '100%', height: '100vh' }}>
-                <div className='scroll_element' style={{ backgroundColor: '#ffdab9' }}>
+                <div className='scroll_element' style={{ backgroundColor: '#fff6f5' }}>
                 </div>
-                <div style={{ flex: 1, backgroundColor: '#faebd7' }}>
+                <div style={{ flex: 1, backgroundColor: '#fff6f5' }}>
                 </div>
-                <div style={{ flex: 1, backgroundColor: '#00ff00' }}>
+                <div style={{ flex: 1, backgroundColor: '#fff6f5' }}>
                     <div className='divSpace-working'>Welcome</div>
                     <div className='box-container-working'>
                         <div className="envelopeCointainer">
@@ -185,7 +185,7 @@ const Working = () => {
                         </div >
                     </div >
                 </div>
-                <div style={{ flex: 1, backgroundColor: '#faebd7' }}>
+                <div style={{ flex: 1, backgroundColor: '#fff6f5' }}>
                 </div>
             </div>
             {/*<div className='divSpace-working'>Welcome</div>
