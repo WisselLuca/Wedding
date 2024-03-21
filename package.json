@@ -2,6 +2,7 @@
   "name": "wedding",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://WisselLuca.github.io/Wedding",
   "dependencies": {
     "@gsap/react": "^2.1.0",
     "@testing-library/jest-dom": "^5.17.0",
