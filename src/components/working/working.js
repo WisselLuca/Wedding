@@ -15,33 +15,6 @@ const Working = () => {
     const partecipatzioneFront = useRef();
     const rotatingPart = useRef();
 
-    /* useEffect(() => {
-         gsap.fromTo(envelope.current,
-             { autoAlpha: 0 },
-             {
-                 autoAlpha: 1,
-                 left: 0,
-                 duration: 1,
-                 scrollTrigger: {
-                     trigger: envelope.current,
-                     start: "top bottom-=100",
-                     toggleActions: "play none none reverse"
-                 }
-             })
-         gsap.fromTo(rotatingPart.current,
-             { autoAlpha: 0 },
-             {
-                 autoAlpha: 1,
-                 left: 0,
-                 duration: 1,
-                 scrollTrigger: {
-                     trigger: rotatingPart.current,
-                     start: "top bottom-=100",
-                     toggleActions: "play none none reverse"
-                 }
-             })
-     }, [])
- */
     const vh = (coef) => window.innerHeight * (coef / 100);
     const vw = (coef) => window.innerWidth * (coef / 100);
 
@@ -56,11 +29,63 @@ const Working = () => {
                 stagger: 0.7
             }
         )
-        const animationRotate = gsap.to(".rotating_part",
+
+        const animationZoom = gsap.fromTo(".envelopeCointainer",
+            { scale: 1 },
+            {
+                scale: 0.85,
+                ease: "none"
+            })
+
+
+        gsap.to(".rotating_part",
             {
                 rotation: "180",
-                transformOrigin: '50% 100%'
+                transformOrigin: '50% 0%'
             }
+        )
+
+        gsap.to(".partecipazione_back",
+            {
+                rotationY: "-270",
+                transformOrigin: '50%',
+            }
+        )
+
+        const animationRotate = gsap.fromTo(".rotating_part",
+            {
+                rotation: "-180",
+                transformOrigin: '50% 0%'
+            },
+            {
+                rotation: "0",
+                transformOrigin: '50% 0%'
+            }
+        )
+
+        const animationRotateYFront = gsap.to(".partecipazione_front",
+            {
+                rotationY: "90",
+                transformOrigin: '50%',
+            }
+        )
+
+        const animationRotateYBack = gsap.fromTo(".partecipazione_back",
+            {
+                rotationY: "-90",
+                transformOrigin: '50%'
+            },
+            {
+                rotationY: "0",
+                transformOrigin: '50%'
+            }
+        )
+        const animationRotateYFrontParteRotante = gsap.to(".rotating_part",
+
+            {
+                rotationY: "180",
+                transformOrigin: '50%'
+            }, 1
         )
 
 
@@ -74,7 +99,7 @@ const Working = () => {
             scrub: true,
         })
 
-        //pinn dell'immagine
+        //pin dell'immagine
         ScrollTrigger.create({
             trigger: '.scroll_element',
             start: vh(100) + " 10%",
@@ -83,19 +108,60 @@ const Working = () => {
             pin: '.envelopeCointainer'
         })
 
-        gsap.fromTo("#linear img", {scale:0.1}, {scale:0.4, duration: 10, ease: "none", repeat: -1});
+
+
+        //pin dell'immagine
+        ScrollTrigger.create({
+            trigger: '.scroll_element',
+            start: vh(140) + " 40%",
+            end: vh(180) + " 50%",
+            markers: true,
+            animation: animationZoom,
+            scrub: true,
+        })
+
 
         //ruota la cosa sotto
         ScrollTrigger.create({
             trigger: ".scroll_element",
-            start: vh(140) + 10 + " 50%",
-            end: vh(160) + " 50%",
+            start: vh(190) + 10 + " 50%",
+            end: vh(210) + " 50%",
             markers: true,
             animation: animationRotate,
             scrub: true,
         })
 
+        //flip della partecipazione front 
+        ScrollTrigger.create({
+            trigger: ".scroll_element",
+            start: vh(220) + 10 + " 50%",
+            end: vh(250) + " 50%",
+            markers: true,
+            animation: animationRotateYFront,
+            scrub: true,
+        })
+
+        ScrollTrigger.create({
+            trigger: ".scroll_element",
+            start: vh(249) + 10 + " 50%",
+            end: vh(280) + " 50%",
+            markers: true,
+            animation: animationRotateYBack,
+            scrub: true,
+        })
+
+        //flip della parte rotante
+        ScrollTrigger.create({
+            trigger: ".scroll_element",
+            start: vh(220) + 10 + " 50%",
+            end: vh(280) + " 50%",
+            markers: true,
+            animation: animationRotateYFrontParteRotante,
+            scrub: true,
+        })
+
     })
+
 
     return (
         <div className='App'>
@@ -108,11 +174,13 @@ const Working = () => {
                     <div className='divSpace-working'>Welcome</div>
                     <div className='box-container-working'>
                         <div className="envelopeCointainer">
-                            <div ref={partecipatzioneFront} className="partecipazione_front">
+                            <div ref={partecipatzioneFront} className="partecipazione partecipazione_front">
                                 <div ref={envelope} className="envelope">
                                 </div>
-                                <div ref={rotatingPart} className="rotating_part">
-                                </div>
+                            </div>
+                            <div className="partecipazione partecipazione_back">
+                            </div>
+                            <div ref={rotatingPart} className="rotating_part">
                             </div>
                         </div >
                     </div >

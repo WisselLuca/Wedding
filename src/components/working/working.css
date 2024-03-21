@@ -27,23 +27,38 @@ body {
 
 .box-container-working {
     min-height: 200px;
-    display: grid;
+    display: flex;
+    justify-content: center;
     justify-content: center;
     margin-bottom: 200vh;
     background-color: #faebd7;
 }
 
-
-.partecipazione_front {
+.partecipazione {
     height: 80vh;
     width: 250px;
     text-align: center;
     position: absolute;
     overflow: hidden;
-    background-image: url(../../img/part_front.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.partecipazione_front {
+    background-image: url(../../img/part_front.png);
+}
+
+.partecipazione_back {
+    background-image: url(../../img/part_back.png);
+}
+
+.envelopeCointainer {
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    width: 100%;
+    height: 100vh;
 }
 
 .envelope {
@@ -61,6 +76,7 @@ body {
     background-color: pink;
     position: absolute;
     bottom: 0;
+    z-index: 9999;
 }
 
 .scroll_element {
