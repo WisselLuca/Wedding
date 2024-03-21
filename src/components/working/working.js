@@ -95,7 +95,7 @@ const Working = () => {
                 <div style={{ flex: 1, backgroundColor: '#faebd7' }}>
                 </div>
                 <div style={{ flex: 1, backgroundColor: '#00ff00' }}>
-                    <div className='divSpace-working'>Welcome</div>
+                    <div className='divSpace-working'>Welcomeeeeee</div>
                     <div className='box-container-working'>
                         <div className="envelopeCointainer">
                             <div ref={partecipatzioneFront} className="partecipazione_front">
