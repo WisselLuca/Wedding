@@ -38,10 +38,17 @@ const Working = () => {
             })
 
 
-        gsap.to(".rotating_part",
+        gsap.to(".rotating_part_front",
             {
                 rotation: "180",
                 transformOrigin: '50% 0%'
+            }
+        )
+
+        gsap.to(".rotating_part_back",
+            {
+                rotationY: "-270",
+                transformOrigin: '50%',
             }
         )
 
@@ -52,7 +59,7 @@ const Working = () => {
             }
         )
 
-        const animationRotate = gsap.fromTo(".rotating_part",
+        const animationRotate = gsap.fromTo(".rotating_part_front",
             {
                 rotation: "-180",
                 transformOrigin: '50% 0%'
@@ -80,12 +87,24 @@ const Working = () => {
                 transformOrigin: '50%'
             }
         )
-        const animationRotateYFrontParteRotante = gsap.to(".rotating_part",
+        const animationRotateYFrontParteRotante = gsap.to(".rotating_part_front",
 
             {
-                rotationY: "180",
+                rotationY: "90",
                 transformOrigin: '50%'
             }, 1
+        )
+
+        const animationRotateYBackParteRotante = gsap.fromTo(".rotating_part_back",
+
+            {
+                rotationY: "-90",
+                transformOrigin: '50%'
+            },
+            {
+                rotationY: "0",
+                transformOrigin: '50%'
+            }
         )
 
 
@@ -143,7 +162,7 @@ const Working = () => {
 
         ScrollTrigger.create({
             trigger: ".scroll_element",
-            start: vh(249) + 10 + " 50%",
+            start: vh(250) + " 50%",
             end: vh(280) + " 50%",
             markers: true,
             animation: animationRotateYBack,
@@ -154,12 +173,20 @@ const Working = () => {
         ScrollTrigger.create({
             trigger: ".scroll_element",
             start: vh(220) + 10 + " 50%",
-            end: vh(280) + " 50%",
+            end: vh(250) + " 50%",
             markers: true,
             animation: animationRotateYFrontParteRotante,
             scrub: true,
         })
 
+        ScrollTrigger.create({
+            trigger: ".scroll_element",
+            start: vh(250) + " 50%",
+            end: vh(280) + " 50%",
+            markers: true,
+            animation: animationRotateYBackParteRotante,
+            scrub: true,
+        })
     })
 
 
@@ -180,7 +207,9 @@ const Working = () => {
                             </div>
                             <div className="partecipazione partecipazione_back">
                             </div>
-                            <div ref={rotatingPart} className="rotating_part">
+                            <div ref={rotatingPart} className="rotating_part rotating_part_front">
+                            </div>
+                            <div ref={rotatingPart} className="rotating_part  rotating_part_back">
                             </div>
                         </div >
                     </div >

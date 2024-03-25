@@ -73,10 +73,22 @@ body {
 .rotating_part {
     height: 20%;
     width: 250px;
-    background-color: #D19E8C;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     position: absolute;
     bottom: 0;
     z-index: 9999;
+}
+
+.rotating_part_front {
+    background-image: url(../../img/rotating_front.png);
+    z-index: 9999;
+}
+
+.rotating_part_back {
+    background-image: url(../../img/rotating_back.png);
+    z-index: 999;
 }
 
 .scroll_element {
