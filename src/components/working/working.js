@@ -11,7 +11,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Working = () => {
     const ref = useRef([]);
-    isMobile = true;
     ref.current = [];
 
     const envelope = useRef();
@@ -203,7 +202,14 @@ const Working = () => {
                         <div style={{ flex: 1, backgroundColor: '#fff6f5' }}>
                         </div>
                         <div style={{ flex: 1, backgroundColor: '#fff6f5' }}>
-                            <div className='divSpace-working'>Welcome</div>
+                            <div className='divSpace-working'>
+                                <div>
+                                    Scroll Down
+                                </div>
+                                <div>
+                                    &#x25BC;
+                                </div>
+                            </div>
                             <div className='box-container-working'>
                                 <div className="envelopeCointainer">
                                     <div ref={partecipatzioneFront} className="partecipazione partecipazione_front">
@@ -225,33 +231,7 @@ const Working = () => {
                 </div>
             </BrowserView>
             <MobileView>
-                <div className='App'>
-                    <div className="page_container" style={{ width: '100%', height: '100vh' }}>
-                        <div className='scroll_element' style={{ backgroundColor: '#fff6f5' }}>
-                        </div>
-                        <div style={{ flex: 1, backgroundColor: '#fff6f5' }}>
-                        </div>
-                        <div style={{ flex: 1, backgroundColor: '#fff6f5' }}>
-                            <div className='divSpace-working'>Welcome</div>
-                            <div className='box-container-working'>
-                                <div className="envelopeCointainer">
-                                    <div ref={partecipatzioneFront} className="partecipazione partecipazione_front">
-                                        <div ref={envelope} className="envelope">
-                                        </div>
-                                    </div>
-                                    <div className="partecipazione partecipazione_back">
-                                    </div>
-                                    <div ref={rotatingPart} className="rotating_part rotating_part_front">
-                                    </div>
-                                    <div ref={rotatingPart} className="rotating_part  rotating_part_back">
-                                    </div>
-                                </div >
-                            </div >
-                        </div>
-                        <div style={{ flex: 1, backgroundColor: '#fff6f5' }}>
-                        </div>
-                    </div>
-                </div>
+                TEST
             </MobileView>
         </fragment>
     )

@@ -11,7 +11,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    font-size: 64px;
+    flex-direction: column;
 }
 
 .App {
@@ -66,7 +67,7 @@ body {
     width: 250px;
     text-align: center;
     left: 0px;
-    background-color: #ffd1cc;
+    background-color: #faf9f6;
     opacity: 0.95;
 }
 
