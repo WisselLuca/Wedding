@@ -54,7 +54,7 @@ body {
     background-image: url(../../img/part_back.png);
 }
 
-.envelopeCointainer {
+.envelopeContainer {
     display: flex;
     justify-content: center;
     background-color: #fff6f5;

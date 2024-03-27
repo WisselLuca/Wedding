@@ -32,7 +32,7 @@ const Working = () => {
             }
         )
 
-        const animationZoom = gsap.fromTo(".envelopeCointainer",
+        const animationZoom = gsap.fromTo(".envelopeContainer",
             { scale: 1 },
             {
                 scale: 0.85,
@@ -110,34 +110,33 @@ const Working = () => {
         )
 
 
-        //sbustare
-        ScrollTrigger.create({
-            trigger: ".scroll_element",
-            start: vh(100) + " 40%",
-            end: vh(140) + " 50%",
-            markers: true,
-            animation: animationEnvelope,
-            scrub: true,
-        })
-
         //pin dell'immagine
         ScrollTrigger.create({
             trigger: '.scroll_element',
             start: vh(100) /*per mobile non deve esserci + " 10%"*/,
             endTrigger: '',
             end: 'bottom top',
-            pin: '.envelopeCointainer'
+            pin: '.envelopeContainer'
         })
-
-
 
         //zoom dell'immagine
         ScrollTrigger.create({
             trigger: '.scroll_element',
-            start: vh(140) + " 40%",
-            end: vh(180) + " 50%",
+            start: vh(180) + " 40%", //old 140
+            end: vh(240) + " 50%", //old 180
             markers: true,
             animation: animationZoom,
+            scrub: true,
+        })
+
+
+        //sbustare
+        ScrollTrigger.create({
+            trigger: ".scroll_element",
+            start: vh(280) + " 40%", //old 100
+            end: vh(380) + " 50%", //old 140
+            markers: true,
+            animation: animationEnvelope,
             scrub: true,
         })
 
@@ -145,46 +144,50 @@ const Working = () => {
         //ruota la cosa sotto
         ScrollTrigger.create({
             trigger: ".scroll_element",
-            start: vh(190) + 10 + " 50%",
-            end: vh(210) + " 50%",
+            start: vh(430) + 10 + " 50%",
+            end: vh(560) + " 50%",
             markers: true,
             animation: animationRotate,
             scrub: true,
         })
 
+
+        //le prossive 2 animazioni vanno eseguite in contemporanea
         //flip della partecipazione front 
         ScrollTrigger.create({
             trigger: ".scroll_element",
-            start: vh(220) + 10 + " 50%",
-            end: vh(250) + " 50%",
+            start: vh(600) + 10 + " 50%", //190
+            end: vh(680) + " 50%", //210
             markers: true,
             animation: animationRotateYFront,
-            scrub: true,
-        })
-
-        ScrollTrigger.create({
-            trigger: ".scroll_element",
-            start: vh(250) + " 50%",
-            end: vh(280) + " 50%",
-            markers: true,
-            animation: animationRotateYBack,
             scrub: true,
         })
 
         //flip della parte rotante
         ScrollTrigger.create({
             trigger: ".scroll_element",
-            start: vh(220) + 10 + " 50%",
-            end: vh(250) + " 50%",
+            start: vh(600) + 10 + " 50%",//190
+            end: vh(680) + " 50%", //210
             markers: true,
             animation: animationRotateYFrontParteRotante,
             scrub: true,
         })
 
+
+        //queste 2 animazioni devono iniziare quando termina quella precedente
         ScrollTrigger.create({
             trigger: ".scroll_element",
-            start: vh(250) + " 50%",
-            end: vh(280) + " 50%",
+            start: vh(680) + " 50%", //old 250
+            end: vh(760) + " 50%", //old 280
+            markers: true,
+            animation: animationRotateYBack,
+            scrub: true,
+        })
+
+        ScrollTrigger.create({
+            trigger: ".scroll_element",
+            start: vh(680) + " 50%",//old 250
+            end: vh(760) + " 50%", //old 280
             markers: true,
             animation: animationRotateYBackParteRotante,
             scrub: true,
@@ -211,7 +214,7 @@ const Working = () => {
                                 </div>
                             </div>
                             <div className='box-container-working'>
-                                <div className="envelopeCointainer">
+                                <div className="envelopeContainer">
                                     <div ref={partecipatzioneFront} className="partecipazione partecipazione_front">
                                         <div ref={envelope} className="envelope">
                                         </div>
