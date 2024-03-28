@@ -234,7 +234,40 @@ const Working = () => {
                 </div>
             </BrowserView>
             <MobileView>
-                TEST
+            <div className='App'>
+                    <div className="page_container" style={{ width: '100%', height: '100vh' }}>
+                        <div className='scroll_element background_color_pink'>
+                        </div>
+                        <div className='background_color_pink' style={{ flex: 1 }}>
+                        </div>
+                        <div className='background_color_pink' style={{ flex: 2 }}>
+                            <div className='divSpace-working'>
+                                <div>
+                                    Scroll Down
+                                </div>
+                                <div>
+                                    &#x25BC;
+                                </div>
+                            </div>
+                            <div className='box-container-working'>
+                                <div className="envelopeContainer">
+                                    <div ref={partecipatzioneFront} className="partecipazione partecipazione_front">
+                                        <div ref={envelope} className="envelope">
+                                        </div>
+                                    </div>
+                                    <div className="partecipazione partecipazione_back">
+                                    </div>
+                                    <div ref={rotatingPart} className="rotating_part rotating_part_front">
+                                    </div>
+                                    <div ref={rotatingPart} className="rotating_part  rotating_part_back">
+                                    </div>
+                                </div >
+                            </div >
+                        </div>
+                        <div className='background_color_pink' style={{ flex: 1 }}>
+                        </div>
+                    </div>
+                </div>
             </MobileView>
         </fragment>
     )
