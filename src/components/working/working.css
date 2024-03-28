@@ -25,6 +25,9 @@ body {
     flex-direction: row;
 }
 
+.background_color_pink{
+  background-color: #fff6f5;
+}
 
 .box-container-working {
     min-height: 200px;
@@ -44,6 +47,7 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    object-fit: contain;
 }
 
 .partecipazione_front {
@@ -63,7 +67,7 @@ body {
 }
 
 .envelope {
-    height: 80%;
+    height: 70%;
     width: 250px;
     text-align: center;
     left: 0px;
@@ -72,14 +76,15 @@ body {
 }
 
 .rotating_part {
-    height: 20%;
+    height: 33.5%;
     width: 250px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    bottom: 0;
+    bottom: -13%;
     z-index: 9999;
+    object-fit: contain;
 }
 
 .rotating_part_front {
@@ -94,7 +99,7 @@ body {
 
 .scroll_element {
     position: absolute;
-    height: 6000px;
+    height: 900vh;
     width: 10px;
     top: 0;
     z-index: 0;

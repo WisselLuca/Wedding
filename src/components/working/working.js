@@ -35,7 +35,7 @@ const Working = () => {
         const animationZoom = gsap.fromTo(".envelopeContainer",
             { scale: 1 },
             {
-                scale: 0.85,
+                scale: 0.75,
                 ease: "none"
             })
 
@@ -113,7 +113,7 @@ const Working = () => {
         //pin dell'immagine
         ScrollTrigger.create({
             trigger: '.scroll_element',
-            start: vh(100) /*per mobile non deve esserci + " 10%"*/,
+            start: vh(100), //per mobile non deve esserci + " 10%"
             endTrigger: '',
             end: 'bottom top',
             pin: '.envelopeContainer'
@@ -193,18 +193,18 @@ const Working = () => {
             scrub: true,
         })
     })
-
+    //fff6f5
 
     return (
         <fragment>
             <BrowserView>
                 <div className='App'>
                     <div className="page_container" style={{ width: '100%', height: '100vh' }}>
-                        <div className='scroll_element' style={{ backgroundColor: '#fff6f5' }}>
+                        <div className='scroll_element background_color_pink'>
                         </div>
-                        <div style={{ flex: 1, backgroundColor: '#fff6f5' }}>
+                        <div className='background_color_pink' style={{ flex: 1 }}>
                         </div>
-                        <div style={{ flex: 1, backgroundColor: '#fff6f5' }}>
+                        <div className='background_color_pink' style={{ flex: 2 }}>
                             <div className='divSpace-working'>
                                 <div>
                                     Scroll Down
@@ -228,7 +228,7 @@ const Working = () => {
                                 </div >
                             </div >
                         </div>
-                        <div style={{ flex: 1, backgroundColor: '#fff6f5' }}>
+                        <div className='background_color_pink' style={{ flex: 1 }}>
                         </div>
                     </div>
                 </div>
