@@ -4,6 +4,11 @@ import { MobileView, BrowserView, isMobile } from 'react-device-detect';
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
+import part_front from '../../img/part_front.png'
+import part_back from '../../img/part_back.png'
+import rotating_front from '../../img/rotating_front.png'
+import rotating_back from '../../img/rotating_back.png'
+
 
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -21,9 +26,11 @@ const Working = () => {
     const vw = (coef) => window.innerWidth * (coef / 100);
 
 
+    console.log("isMobile", isMobile)
+
     useGSAP(() => {
         const animationEnvelope = gsap.fromTo(".envelope",
-            { height: '100%' },
+            { height: '70%' },
             {
                 height: 0,
                 ease: "none",
@@ -32,10 +39,19 @@ const Working = () => {
             }
         )
 
-        const animationZoom = gsap.fromTo(".envelopeContainer",
+        const animationZoomBrowser = gsap.fromTo(".envelopeContainer",
+            { scale: 1 },
+            {
+                scale: 0.85,
+                translateY: -25,
+                ease: "none"
+            })
+
+        const animationZoomMobile = gsap.fromTo(".envelopeContainer",
             { scale: 1 },
             {
                 scale: 0.75,
+                translateY: -55,
                 ease: "none"
             })
 
@@ -125,7 +141,7 @@ const Working = () => {
             start: vh(180) + " 40%", //old 140
             end: vh(240) + " 50%", //old 180
             markers: true,
-            animation: animationZoom,
+            animation: (isMobile ? animationZoomMobile : animationZoomBrowser),
             scrub: true,
         })
 
@@ -215,15 +231,25 @@ const Working = () => {
                             </div>
                             <div className='box-container-working'>
                                 <div className="envelopeContainer">
-                                    <div ref={partecipatzioneFront} className="partecipazione partecipazione_front">
-                                        <div ref={envelope} className="envelope">
+                                    <div ref={partecipatzioneFront} className="partecipazione">
+                                        <div style={{
+                                            position: 'relative',
+                                            width: '100%',
+                                            height: '100%',
+                                        }}>
+                                            <img src={part_front} className="img_contain partecipazione_front" />
+                                            <div ref={envelope} className="envelope">
+                                            </div>
                                         </div>
                                     </div>
-                                    <div className="partecipazione partecipazione_back">
+                                    <div className="partecipazione">
+                                        <img src={part_back} className="img_contain partecipazione_back" />
                                     </div>
-                                    <div ref={rotatingPart} className="rotating_part rotating_part_front">
+                                    <div ref={rotatingPart} className="rotating_part">
+                                        <img src={rotating_front} className="img_contain rotating_part_front" />
                                     </div>
-                                    <div ref={rotatingPart} className="rotating_part  rotating_part_back">
+                                    <div ref={rotatingPart} className="rotating_part ">
+                                        <img src={rotating_back} className="img_contain rotating_part_back" />
                                     </div>
                                 </div >
                             </div >
@@ -234,7 +260,7 @@ const Working = () => {
                 </div>
             </BrowserView>
             <MobileView>
-            <div className='App'>
+                <div className='Mobile'>
                     <div className="page_container" style={{ width: '100%', height: '100vh' }}>
                         <div className='scroll_element background_color_pink'>
                         </div>
@@ -243,7 +269,7 @@ const Working = () => {
                         <div className='background_color_pink' style={{ flex: 2 }}>
                             <div className='divSpace-working'>
                                 <div>
-                                    Scroll Down
+                                    Scroll Down Mobile
                                 </div>
                                 <div>
                                     &#x25BC;
