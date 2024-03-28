@@ -231,25 +231,15 @@ const Working = () => {
                             </div>
                             <div className='box-container-working'>
                                 <div className="envelopeContainer">
-                                    <div ref={partecipatzioneFront} className="partecipazione">
-                                        <div style={{
-                                            position: 'relative',
-                                            width: '100%',
-                                            height: '100%',
-                                        }}>
-                                            <img src={part_front} className="img_contain partecipazione_front" />
-                                            <div ref={envelope} className="envelope">
-                                            </div>
+                                    <div ref={partecipatzioneFront} className="partecipazione partecipazione_front">
+                                        <div ref={envelope} className="envelope">
                                         </div>
                                     </div>
-                                    <div className="partecipazione">
-                                        <img src={part_back} className="img_contain partecipazione_back" />
+                                    <div className="partecipazione partecipazione_back">
                                     </div>
-                                    <div ref={rotatingPart} className="rotating_part">
-                                        <img src={rotating_front} className="img_contain rotating_part_front" />
+                                    <div ref={rotatingPart} className="rotating_part rotating_part_front">
                                     </div>
-                                    <div ref={rotatingPart} className="rotating_part ">
-                                        <img src={rotating_back} className="img_contain rotating_part_back" />
+                                    <div ref={rotatingPart} className="rotating_part  rotating_part_back">
                                     </div>
                                 </div >
                             </div >
@@ -294,7 +284,7 @@ const Working = () => {
                         </div>
                     </div>
                 </div>
-                {/*<div className='Mobile'>
+                {/*<div className='oldMobile'>
                     <div className="page_container" style={{ width: '100%', height: '100vh' }}>
                         <div className='scroll_element background_color_pink'>
                         </div>
@@ -328,6 +318,50 @@ const Working = () => {
                         </div>
                     </div>
                 </div> */}
+                {/*<div className='App'>
+                    <div className="page_container" style={{ width: '100%', height: '100vh' }}>
+                        <div className='scroll_element background_color_pink'>
+                        </div>
+                        <div className='background_color_pink' style={{ flex: 1 }}>
+                        </div>
+                        <div className='background_color_pink' style={{ flex: 2 }}>
+                            <div className='divSpace-working'>
+                                <div>
+                                    Scroll Down
+                                </div>
+                                <div>
+                                    &#x25BC;
+                                </div>
+                            </div>
+                            <div className='box-container-working'>
+                                <div className="envelopeContainer">
+                                    <div ref={partecipatzioneFront} className="partecipazione">
+                                        <div style={{
+                                            position: 'relative',
+                                            width: '100%',
+                                            height: '100%',
+                                        }}>
+                                            <img src={part_front} className="img_contain partecipazione_front" />
+                                            <div ref={envelope} className="envelope">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="partecipazione">
+                                        <img src={part_back} className="img_contain partecipazione_back" />
+                                    </div>
+                                    <div ref={rotatingPart} className="rotating_part">
+                                        <img src={rotating_front} className="img_contain rotating_part_front" />
+                                    </div>
+                                    <div ref={rotatingPart} className="rotating_part ">
+                                        <img src={rotating_back} className="img_contain rotating_part_back" />
+                                    </div>
+                                </div >
+                            </div >
+                        </div>
+                        <div className='background_color_pink' style={{ flex: 1 }}>
+                        </div>
+                    </div>
+                </div>*/}
             </MobileView>
         </fragment>
     )

@@ -229,14 +229,7 @@ body {
 
 }
 
-.oldWorking {
-    body {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        scroll-behavior: smooth;
-        overflow-x: hidden;
-    }
+.oldMobile {
 
     .divSpace-working {
         height: 100vh;
