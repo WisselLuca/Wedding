@@ -4,7 +4,7 @@ import MoreInfo from '../components/moreInfo/moreInfo';
 
 function Home() {
 
-    let [pageToShow, setPageChange] = useState(false)
+    let [pageToShow, setPageChange] = useState(true)
 
 
     return (

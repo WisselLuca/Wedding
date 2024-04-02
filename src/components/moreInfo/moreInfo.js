@@ -88,8 +88,8 @@ const MoreInfo = ({ setPageChange }) => {
         content: accordionDataENG
     }]
 
-    let [contentToShow, setContentToShow] = useState(language[1].content)
-    let [labelinEvidenza, setLabelinEvidenza] = useState(language[1].label)
+    let [contentToShow, setContentToShow] = useState(language[0].content)
+    let [labelinEvidenza, setLabelinEvidenza] = useState(language[0].label)
 
     return (
         <div className='flex_column'>
