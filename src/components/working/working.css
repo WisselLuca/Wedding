@@ -87,16 +87,18 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
         position: absolute;
-        bottom: -9%;
+        bottom: -13%;
         z-index: 9999;
         object-fit: contain;
     }
 
     .rotating_part_front {
+        background-image: url(../../img/rotating_front.png);
         z-index: 9999;
     }
 
     .rotating_part_back {
+        background-image: url(../../img/rotating_front.png);
         z-index: 999;
     }
 
