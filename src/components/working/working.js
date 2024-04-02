@@ -1,20 +1,19 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import './working.css'
 import { MobileView, BrowserView, isMobile } from 'react-device-detect';
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
-import part_front from '../../img/part_front.png'
-import part_back from '../../img/part_back.png'
-import rotating_front from '../../img/rotating_front.png'
-import rotating_back from '../../img/rotating_back.png'
 
 
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
-const Working = () => {
+const Working = ({ setPageChange }) => {
+
+    const showMarkers = false
+
     const ref = useRef([]);
     ref.current = [];
 
@@ -30,7 +29,7 @@ const Working = () => {
 
     useGSAP(() => {
         const animationEnvelope = gsap.fromTo(".envelope",
-            { height: '70%' },
+            { height: '75%' },
             {
                 height: 0,
                 ease: "none",
@@ -76,6 +75,13 @@ const Working = () => {
                 transformOrigin: '50%',
             }
         )
+
+        gsap.from(".divSpace-working", {
+            duration: 1.5,
+            yPercent: 20,
+            ease: "power4",
+            stagger: 0.1
+        });
 
         const animationRotate = gsap.fromTo(".rotating_part_front",
             {
@@ -125,6 +131,15 @@ const Working = () => {
             }
         )
 
+        const animationMoreInfo = gsap.to(".more_info",
+
+            {
+                top: "-25px",
+                position: "absolute",
+                color: "#040406"
+            }, 1
+        )
+
 
         //pin dell'immagine
         ScrollTrigger.create({
@@ -140,7 +155,7 @@ const Working = () => {
             trigger: '.scroll_element',
             start: vh(180) + " 40%", //old 140
             end: vh(240) + " 50%", //old 180
-            markers: true,
+            markers: showMarkers,
             animation: (isMobile ? animationZoomMobile : animationZoomBrowser),
             scrub: true,
         })
@@ -151,7 +166,7 @@ const Working = () => {
             trigger: ".scroll_element",
             start: vh(280) + " 40%", //old 100
             end: vh(380) + " 50%", //old 140
-            markers: true,
+            markers: showMarkers,
             animation: animationEnvelope,
             scrub: true,
         })
@@ -162,7 +177,7 @@ const Working = () => {
             trigger: ".scroll_element",
             start: vh(430) + 10 + " 50%",
             end: vh(560) + " 50%",
-            markers: true,
+            markers: showMarkers,
             animation: animationRotate,
             scrub: true,
         })
@@ -174,7 +189,7 @@ const Working = () => {
             trigger: ".scroll_element",
             start: vh(600) + 10 + " 50%", //190
             end: vh(680) + " 50%", //210
-            markers: true,
+            markers: showMarkers,
             animation: animationRotateYFront,
             scrub: true,
         })
@@ -184,7 +199,7 @@ const Working = () => {
             trigger: ".scroll_element",
             start: vh(600) + 10 + " 50%",//190
             end: vh(680) + " 50%", //210
-            markers: true,
+            markers: showMarkers,
             animation: animationRotateYFrontParteRotante,
             scrub: true,
         })
@@ -195,7 +210,7 @@ const Working = () => {
             trigger: ".scroll_element",
             start: vh(680) + " 50%", //old 250
             end: vh(760) + " 50%", //old 280
-            markers: true,
+            markers: showMarkers,
             animation: animationRotateYBack,
             scrub: true,
         })
@@ -204,15 +219,23 @@ const Working = () => {
             trigger: ".scroll_element",
             start: vh(680) + " 50%",//old 250
             end: vh(760) + " 50%", //old 280
-            markers: true,
+            markers: showMarkers,
             animation: animationRotateYBackParteRotante,
+            scrub: true,
+        })
+
+        ScrollTrigger.create({
+            trigger: ".scroll_element",
+            start: vh(760) + " 50%",//old 250
+            markers: showMarkers,
+            animation: animationMoreInfo,
             scrub: true,
         })
     })
     //fff6f5
 
     return (
-        <fragment>
+        <Fragment>
             <BrowserView>
                 <div className='App'>
                     <div className="page_container" style={{ width: '100%', height: '100vh' }}>
@@ -241,6 +264,7 @@ const Working = () => {
                                     </div>
                                     <div ref={rotatingPart} className="rotating_part  rotating_part_back">
                                     </div>
+                                    <div className='more_info' onClick={() => { setPageChange(false) }}>For more info click here</div>
                                 </div >
                             </div >
                         </div>
@@ -256,10 +280,10 @@ const Working = () => {
                         </div>
                         <div className='background_color_pink' style={{ flex: 1 }}>
                         </div>
-                        <div className='background_color_pink' style={{ flex: 2 }}>
+                        <div className='background_color_pink' style={{ flex: 5 }}>
                             <div className='divSpace-working'>
                                 <div>
-                                    Scroll Down Mobile
+                                    Scroll Down
                                 </div>
                                 <div>
                                     &#x25BC;
@@ -277,8 +301,9 @@ const Working = () => {
                                     </div>
                                     <div ref={rotatingPart} className="rotating_part  rotating_part_back">
                                     </div>
-                                </div >
-                            </div >
+                                    <div className='more_info' onClick={() => { setPageChange(false) }}>For more info click here</div>
+                                </div>
+                            </div>
                         </div>
                         <div className='background_color_pink' style={{ flex: 1 }}>
                         </div>
@@ -363,7 +388,7 @@ const Working = () => {
                     </div>
                 </div>*/}
             </MobileView>
-        </fragment>
+        </Fragment>
     )
 }
 
