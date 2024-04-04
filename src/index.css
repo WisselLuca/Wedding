@@ -13,4 +13,32 @@ code {
     monospace;
 }
 
+@font-face {
+  font-family: "Zapfino";
+  src: local("Zapfino"),
+   url("./fonts/zapfino/Zapfino.ttf") format("truetype");
+  font-weight: normal;
+ }
+
+
+ @font-face {
+  font-family: "HelveticaNeueMedium";
+  src: local("HelveticaNeueMedium"),
+   url("./fonts/HelveticaNeue/HelveticaNeueMedium.otf") format("truetype");
+  font-weight: normal;
+ }
+
+ @font-face {
+  font-family: "HelveticaNeueLight";
+  src: local("HelveticaNeueLight"),
+   url("./fonts/HelveticaNeue/HelveticaNeueLight.otf") format("truetype");
+  font-weight: normal;
+ }
+ 
+ @font-face {
+  font-family: "HelveticaNeueRoman";
+  src: local("HelveticaNeueRoman"),
+   url("./fonts/HelveticaNeue/HelveticaNeueRoman.otf") format("truetype");
+  font-weight: normal;
+ }
 

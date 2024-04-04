@@ -8,6 +8,30 @@ body {
     color: #040406
 }
 
+.zapfino_font_family {
+    font-family: "Zapfino";
+}
+
+.Helvetica_font_family {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.helveticaNeue_font_family_medium {
+    font-family: "HelveticaNeueMedium";
+}
+
+.helveticaNeue_font_family_light {
+    font-family: "HelveticaNeueLight";
+}
+
+.helveticaNeue_font_family_roman {
+    font-family: "HelveticaNeueRoman";
+}
+
+.font_color {
+    color: #292423
+}
+
 .App {
 
     .divSpace-working {
@@ -127,7 +151,7 @@ body {
 
     .more_info {
         color: #fff6f5;
-        font-size: 16px;
+        font-size: 20px;
     }
 }
 
@@ -254,7 +278,7 @@ body {
 
     .more_info {
         color: #fff6f5;
-        font-size: 16px;
+        font-size: 20px;
     }
 }
 

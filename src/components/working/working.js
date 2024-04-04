@@ -3,6 +3,7 @@ import './working.css'
 import { MobileView, BrowserView, isMobile } from 'react-device-detect';
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
+import Arrow_Down from '../../img/arrow_down.svg'
 
 
 
@@ -94,7 +95,11 @@ const Working = ({ setPageChange }) => {
             }
         )
 
-        const animationRotateYFront = gsap.to(".partecipazione_front",
+        const animationRotateYFront = gsap.fromTo(".partecipazione_front",
+            {
+                rotationY: "0",
+                transformOrigin: '50%',
+            },
             {
                 rotationY: "90",
                 transformOrigin: '50%',
@@ -111,8 +116,11 @@ const Working = ({ setPageChange }) => {
                 transformOrigin: '50%'
             }
         )
-        const animationRotateYFrontParteRotante = gsap.to(".rotating_part_front",
-
+        const animationRotateYFrontParteRotante = gsap.fromTo(".rotating_part_front",
+            {
+                rotationY: "0",
+                transformOrigin: '50%',
+            },
             {
                 rotationY: "90",
                 transformOrigin: '50%'
@@ -131,10 +139,10 @@ const Working = ({ setPageChange }) => {
             }
         )
 
-        const animationMoreInfo = gsap.to(".more_info",
-
+        const animationMoreInfo = gsap.fromTo(".more_info",
+            {},
             {
-                top: "-25px",
+                top: "-35px",
                 position: "absolute",
                 color: "#040406"
             }, 1
@@ -245,11 +253,11 @@ const Working = ({ setPageChange }) => {
                         </div>
                         <div className='background_color_pink' style={{ flex: 2 }}>
                             <div className='divSpace-working'>
-                                <div>
+                                <div className='zapfino_font_family font_color'>
                                     Scroll Down
                                 </div>
                                 <div>
-                                    &#x25BC;
+                                    <img src={Arrow_Down} alt="&#x25BC;" />
                                 </div>
                             </div>
                             <div className='box-container-working'>
@@ -281,12 +289,12 @@ const Working = ({ setPageChange }) => {
                         <div className='background_color_pink' style={{ flex: 1 }}>
                         </div>
                         <div className='background_color_pink' style={{ flex: 5 }}>
-                            <div className='divSpace-working'>
-                                <div>
+                            <div className='divSpace-working '>
+                                <div className='zapfino_font_family font_color'>
                                     Scroll Down
                                 </div>
                                 <div>
-                                    &#x25BC;
+                                    <img src={Arrow_Down} alt="&#x25BC;" />
                                 </div>
                             </div>
                             <div className='box-container-working'>

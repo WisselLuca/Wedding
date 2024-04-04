@@ -56,3 +56,23 @@ body {
 .bold {
     font-weight: bold;
 }
+
+.zapfino_font_family {
+    font-family: "Zapfino";
+}
+
+.Helvetica_font_family {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.helveticaNeue_font_family_medium {
+    font-family: "HelveticaNeueMedium";
+}
+
+.helveticaNeue_font_family_light {
+    font-family: "HelveticaNeueLight";
+}
+
+.helveticaNeue_font_family_roman {
+    font-family: "HelveticaNeueRoman";
+}

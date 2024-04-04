@@ -6,7 +6,6 @@ function Home() {
 
     let [pageToShow, setPageChange] = useState(true)
 
-
     return (
         <div>
             {
