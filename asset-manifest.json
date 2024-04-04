@@ -1,19 +1,24 @@
 {
   "files": {
-    "main.css": "/Wedding/static/css/main.52ab8b3a.css",
-    "main.js": "/Wedding/static/js/main.b79b570d.js",
+    "main.css": "/Wedding/static/css/main.fea5dbbf.css",
+    "main.js": "/Wedding/static/js/main.b2de613b.js",
     "static/js/453.7e3e3be8.chunk.js": "/Wedding/static/js/453.7e3e3be8.chunk.js",
+    "static/media/HelveticaNeueRoman.otf": "/Wedding/static/media/HelveticaNeueRoman.ddb209473d7df560da50.otf",
+    "static/media/Zapfino.ttf": "/Wedding/static/media/Zapfino.c83b4a2c80c7d537eb71.ttf",
+    "static/media/HelveticaNeueLight.otf": "/Wedding/static/media/HelveticaNeueLight.a7c3c98319c1341d5aa5.otf",
+    "static/media/HelveticaNeueMedium.otf": "/Wedding/static/media/HelveticaNeueMedium.38884ffafe8888205009.otf",
     "static/media/part_front.png": "/Wedding/static/media/part_front.0dcb5060653235f4a959.png",
     "static/media/part_back.png": "/Wedding/static/media/part_back.98bebd69e0e9c9a9a7a3.png",
     "static/media/rotating_front.png": "/Wedding/static/media/rotating_front.ef2ea71cc3893e397dee.png",
     "static/media/rotating_back.png": "/Wedding/static/media/rotating_back.466e8fd1f50824e7682f.png",
     "index.html": "/Wedding/index.html",
-    "main.52ab8b3a.css.map": "/Wedding/static/css/main.52ab8b3a.css.map",
-    "main.b79b570d.js.map": "/Wedding/static/js/main.b79b570d.js.map",
+    "static/media/arrow_down.svg": "/Wedding/static/media/arrow_down.694de6a0e3cfefbc998ce2aa71d0450f.svg",
+    "main.fea5dbbf.css.map": "/Wedding/static/css/main.fea5dbbf.css.map",
+    "main.b2de613b.js.map": "/Wedding/static/js/main.b2de613b.js.map",
     "453.7e3e3be8.chunk.js.map": "/Wedding/static/js/453.7e3e3be8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.52ab8b3a.css",
-    "static/js/main.b79b570d.js"
+    "static/css/main.fea5dbbf.css",
+    "static/js/main.b2de613b.js"
   ]
 }
