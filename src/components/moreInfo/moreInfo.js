@@ -21,52 +21,62 @@ const MoreInfo = ({ setPageChange }) => {
         },
         {
             title: 'Vuoi Farci un regalo? Ecco come',
-            content: `<div><p>Poter condividere con voi un giorno così speciale sarà il dono più grande! Se desiderate farci un regalo potete contribuire a rendere speciale la nostra Luna di Miele mediante un bonifico alle seguenti coordinate:</p>
+            content: `<div>
+            <p>Poter condividere con voi un giorno così speciale sarà il dono più grande!</p>
+            <p>Se desiderate farci un regalo potete contribuire a rendere speciale la nostra Luna di Miele mediante un bonifico alle seguenti coordinate:</p>
             <p>IBAN: IT13P0623005054000064117810</p> 
-            <p>BENEFICIARIO: Giulia Vellozzi oppure Luca Wissel</p></div>`
+            <p>BENEFICIARIO: Giulia Vellozzi oppure Luca Wissel</p>
+            <p>Abbiamo in programma di trascorrere la nostra luna di miele in Giappone, dove esploreremo le vivaci città di Tokyo e Kyoto, visiteremo gli antichi templi di Nara e ci rilasseremo nella tranquilla campagna. Siamo entusiasti di immergerci nella ricca cultura e storia del Giappone, e non vediamo l'ora di condividere i nostri ricordi con voi!</p>
+            </div>`
         },
         {
-            title: 'Consigli Utili',
-            content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
-      quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
-      dolor ut sequi minus iste? Quas?`
+            title: 'Come dare Conferma?',
+            content: `<div>
+            <b>Conferma la tua presenza:</b>
+            <p>Per aiutarci a organizzare al meglio il nostro grande giorno, ti preghiamo di confermare la tua presenza per via telefonica al numero +39 3200116673 oppure al +39 3881296125.</p>
+            <b>Intolleranze alimentari o esigenze varie:</b>
+            <p>Ci teniamo a rendere il nostro matrimonio un evento piacevole per tutti gli invitati. Se hai intolleranze alimentari o esigenze specifiche, ti preghiamo di segnalarcelo al momento della conferma della tua presenza.
+            In caso di allergie o intolleranze gravi, saremo lieti di collaborare con te e con il nostro catering per garantirti un menù sicuro e gustoso.
+            Per qualsiasi altra esigenza, non esitare a contattarci.</p>
+            <b>Grazie per la tua collaborazione!</b>
+            </div>`
         }
     ];
 
     const accordionDataENG = [
         {
-            title: 'When?',
-            content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
-      laborum cupiditate possimus labore, hic temporibus velit dicta earum
-      suscipit commodi eum enim atque at? Et perspiciatis dolore iure
-      voluptatem.`
+            title: 'When and Where?',
+            content: `<div>
+            <p>The ceremony will be held on Ariana beach at <a href="https://www.google.com/maps/place/Stabilimento+Lido+Bahia+Blanca/@41.2154848,13.5404798,17z/data=!3m1!4b1!4m9!3m8!1s0x13252cb5ab8e5ced:0x8198e8f5c621905c!5m2!4m1!1i2!8m2!3d41.2154848!4d13.5404798!16s%2Fg%2F11b6ztbnzv?entry=ttu" target="_blank" rel="noopener noreferrer"> Bahia Blanca</a> Via Flacca, Km 25/700, 04024 Gaeta LT on June 21, 2024.</p>
+            <p>The civil ceremony will take place on the sand at 6:30 pm, followed by an aperitif and reception on the lawn.</p>
+            </div>`
         },
         {
-            title: 'Where?',
-            content: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia veniam
-      reprehenderit nam assumenda voluptatem ut. Ipsum eius dicta, officiis
-      quaerat iure quos dolorum accusantium ducimus in illum vero commodi
-      pariatur? Impedit autem esse nostrum quasi, fugiat a aut error cumque
-      quidem maiores doloremque est numquam praesentium eos voluptatem amet!
-      Repudiandae, mollitia id reprehenderit a ab odit!`
+            title: 'Dress Code?',
+            content: `<div><p>We have not chosen a dress code for our wedding. We want our guests to feel free to wear whatever makes them feel beautiful and comfortable.</p>
+            </div>`
         },
         {
-            title: 'How To Dress?',
-            content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
-      quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
-      dolor ut sequi minus iste? Quas?`
+            title: `Whant to make a Gift? Here is how`,
+            content: `<div>
+            <p>Sharing this special day with you will be the greatest gift!</p>
+            <p>If you would like to give us a gift, you can contribute to making our honeymoon special by making a bank transfer to the following details:</p>
+            <p>IBAN: IT13P0623005054000064117810</p> 
+            <p>TO: Giulia Vellozzi oppure Luca Wissel</p>
+            <p>We are planning to spend our honeymoon in Japan, where we will explore the vibrant cities of Tokyo and Kyoto, visit the ancient temples of Nara, and relax in the serene countryside. We are so excited to experience the rich culture and history of Japan, and we can't wait to share our memories with you!</p>
+            </div>`
         },
         {
-            title: 'Whant to make a Gift? here is how',
-            content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
-      quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
-      dolor ut sequi minus iste? Quas?`
-        },
-        {
-            title: 'Usefull Tips',
-            content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
-      quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
-      dolor ut sequi minus iste? Quas?`
+            title: 'How To confirm?',
+            content: `<div>
+            <b>Confirm your attendance:</b>
+            <p>To help us better organize our big day, please confirm your attendance by phone at +39 3200116673 or +39 3881296125.</p>
+            <b>Food intolerances or special needs:</b>
+            <p>We want to make our wedding a pleasant event for all guests. If you have food intolerances or special needs, please let us know when you confirm your attendance.
+            In case of severe allergies or intolerances, we will be happy to work with you and our caterer to ensure a safe and delicious menu.
+            For any other needs, please do not hesitate to contact us.</p>
+            <b>Thank you for your cooperation!</b>
+            </div>`
         }
     ];
 
