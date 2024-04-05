@@ -65,7 +65,7 @@ const MoreInfo = ({ setPageChange }) => {
             </div>`
         },
         {
-            title: `Want to make a Gift? Here is how`,
+            title: `Want to make a gift? Here is how`,
             content: `<div>
             <p>Sharing this special day with you will be the greatest gift!</p>
             <p>If you would like to give us a gift, you can contribute to making our honeymoon special by making a bank transfer to the following details:</p>
@@ -75,7 +75,7 @@ const MoreInfo = ({ setPageChange }) => {
             </div>`
         },
         {
-            title: 'How To confirm?',
+            title: 'How to confirm?',
             content: `<div>
             <b>Confirm your attendance:</b>
             <p>To help us better organize our big day, please confirm your attendance by phone at +39 3200116673 or +39 3881296125.</p>
