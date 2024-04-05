@@ -10,17 +10,21 @@ const MoreInfo = ({ setPageChange }) => {
         {
             title: 'Dove e Quando?',
             content: `<div>
-            <p>La cerimonia si terrà sulla spiaggia dell'Ariana presso <a href="https://www.google.com/maps/place/Stabilimento+Lido+Bahia+Blanca/@41.2154848,13.5404798,17z/data=!3m1!4b1!4m9!3m8!1s0x13252cb5ab8e5ced:0x8198e8f5c621905c!5m2!4m1!1i2!8m2!3d41.2154848!4d13.5404798!16s%2Fg%2F11b6ztbnzv?entry=ttu" target="_blank" rel="noopener noreferrer"> Bahia Blanca</a> Via Flacca, Km 25/700, 04024 Gaeta LT il 21 Giugno 2024.</p>
-            <p>Il rito civile sarà sulla sabbia e inizierà alle 18:30 per poi proseguire con aperitivo e ricevimento sul prato</p>
+            <p>Sogniamo di dirci "sì" con i piedi nudi nella sabbia, cullati dal suono delle onde e baciati dal sole calante.</p>
+            <p>La cerimonia si terrà venerdì 21 giugno 2024 alle ore 18:30 sulla spiaggia dell'Ariana presso <a href="https://www.google.com/maps/place/Stabilimento+Lido+Bahia+Blanca/@41.2154848,13.5404798,17z/data=!3m1!4b1!4m9!3m8!1s0x13252cb5ab8e5ced:0x8198e8f5c621905c!5m2!4m1!1i2!8m2!3d41.2154848!4d13.5404798!16s%2Fg%2F11b6ztbnzv?entry=ttu" target="_blank" rel="noopener noreferrer"> Bahia Blanca</a> (Via Flacca, Km 25/700, 04024 Gaeta LT).
+            <p>Dopo il rito civile sulla sabbia, festeggeremo con un aperitivo e un ricevimento sul prato, immersi nella magica atmosfera del tramonto sul mare.</p>
             </div>`
         },
         {
             title: 'Come vestirsi?',
-            content: `<div><p>Non abbiamo pensato a nessun dress code, vogliamo che i nostri ospiti si sentano liberi di indossare ciò che li fa sentire belli e a proprio agio</p>
+            content: `<div>
+            <p>
+            Per il nostro matrimonio, non abbiamo previsto un dress code particolare. Vogliamo che i nostri ospiti si sentano liberi di indossare ciò che li fa sentire belli e a proprio agio, che sia un abito elegante, un outfit casual o un look bohémien.
+            </p>
             </div>`
         },
         {
-            title: 'Vuoi Farci un regalo? Ecco come',
+            title: 'Vuoi farci un regalo? Ecco come',
             content: `<div>
             <p>Poter condividere con voi un giorno così speciale sarà il dono più grande!</p>
             <p>Se desiderate farci un regalo potete contribuire a rendere speciale la nostra Luna di Miele mediante un bonifico alle seguenti coordinate:</p>
@@ -47,17 +51,21 @@ const MoreInfo = ({ setPageChange }) => {
         {
             title: 'When and Where?',
             content: `<div>
-            <p>The ceremony will be held on Ariana beach at <a href="https://www.google.com/maps/place/Stabilimento+Lido+Bahia+Blanca/@41.2154848,13.5404798,17z/data=!3m1!4b1!4m9!3m8!1s0x13252cb5ab8e5ced:0x8198e8f5c621905c!5m2!4m1!1i2!8m2!3d41.2154848!4d13.5404798!16s%2Fg%2F11b6ztbnzv?entry=ttu" target="_blank" rel="noopener noreferrer"> Bahia Blanca</a> Via Flacca, Km 25/700, 04024 Gaeta LT on June 21, 2024.</p>
-            <p>The civil ceremony will take place on the sand at 6:30 pm, followed by an aperitif and reception on the lawn.</p>
+            <p>We dream of saying "I do" with bare feet in the sand, lulled by the sound of the waves and kissed by the setting sun.</p>
+            <p>The ceremony will take place on Friday, June 21, 2024 at 6:30 pm on the Ariana beach at <a href="https://www.google.com/maps/place/Stabilimento+Lido+Bahia+Blanca/@41.2154848,13.5404798,17z/data=!3m1!4b1!4m9!3m8!1s0x13252cb5ab8e5ced:0x8198e8f5c621905c!5m2!4m1!1i2!8m2!3d41.2154848!4d13.5404798!16s%2Fg%2F11b6ztbnzv?entry=ttu" target="_blank" rel="noopener noreferrer"> Bahia Blanca</a> (Via Flacca, Km 25/700, 04024 Gaeta LT).</p>
+            <p>After the civil ceremony on the sand, we will celebrate with an aperitif and a reception on the lawn, immersed in the magical atmosphere of the sunset over the sea.</p>
             </div>`
         },
         {
             title: 'Dress Code?',
-            content: `<div><p>We have not chosen a dress code for our wedding. We want our guests to feel free to wear whatever makes them feel beautiful and comfortable.</p>
+            content: `<div>
+            <p>
+            We don't have a dress code for our wedding. We want our guests to feel free to wear whatever makes them feel beautiful and comfortable, whether it's an elegant dress, a casual outfit, or a bohemian look.
+            </p>
             </div>`
         },
         {
-            title: `Whant to make a Gift? Here is how`,
+            title: `Want to make a Gift? Here is how`,
             content: `<div>
             <p>Sharing this special day with you will be the greatest gift!</p>
             <p>If you would like to give us a gift, you can contribute to making our honeymoon special by making a bank transfer to the following details:</p>
