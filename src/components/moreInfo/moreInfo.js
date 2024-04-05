@@ -42,6 +42,7 @@ const MoreInfo = ({ setPageChange }) => {
             <p>Ci teniamo a rendere il nostro matrimonio un evento piacevole per tutti gli invitati. Se hai intolleranze alimentari o esigenze specifiche, ti preghiamo di segnalarcelo al momento della conferma della tua presenza.
             In caso di allergie o intolleranze gravi, saremo lieti di collaborare con te e con il nostro catering per garantirti un menù sicuro e gustoso.
             Per qualsiasi altra esigenza, non esitare a contattarci.</p>
+            <p>Se ti fa piacere, porta anche un gratta e vinci</p>
             <b>Grazie per la tua collaborazione!</b>
             </div>`
         }
@@ -83,6 +84,7 @@ const MoreInfo = ({ setPageChange }) => {
             <p>We want to make our wedding a pleasant event for all guests. If you have food intolerances or special needs, please let us know when you confirm your attendance.
             In case of severe allergies or intolerances, we will be happy to work with you and our caterer to ensure a safe and delicious menu.
             For any other needs, please do not hesitate to contact us.</p>
+            <p>If you feel like it, bring a scratch-off lottery ticket too.</p>
             <b>Thank you for your cooperation!</b>
             </div>`
         }
